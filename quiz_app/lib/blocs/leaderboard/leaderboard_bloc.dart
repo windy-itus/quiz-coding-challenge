@@ -63,6 +63,10 @@ class LeaderboardBloc extends Bloc<LeaderboardEvent, LeaderboardState> {
       }
     }
 
+    for (final entry in leaderboardUpdate.added!) {
+      updatedEntries.add(entry);
+    }
+
     // Remove entries that are no longer in the leaderboard
     if (leaderboardUpdate.removed != null && leaderboardUpdate.removed!.isNotEmpty) {
       updatedEntries.removeWhere((entry) => leaderboardUpdate.removed!.contains(entry.userId));
