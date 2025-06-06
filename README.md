@@ -34,6 +34,8 @@ Key Features:
 
 ### 4. Video Submission
 
+**Note: If the video quality is poor or parts of it are missing, please check the Google Drive URL: https://drive.google.com/drive/folders/1VwyqG41YhZlMbv90gSNybufswU9n1lNN?usp=sharing
+
 A video demonstration of the implemented system, showcasing:
 
 - Introduction myself
