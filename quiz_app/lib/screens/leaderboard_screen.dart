@@ -45,6 +45,10 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
           }
 
           if (state.status == LeaderboardStatus.connected && state.leaderboard != null) {
+            if (state.leaderboard!.entries.isEmpty) {
+              return const Center(child: Text(StringConstants.noEntriesYet));
+            }
+
             return ListView.builder(
               itemCount: state.leaderboard!.entries.length,
               itemBuilder: (context, index) {

@@ -22,4 +22,5 @@ class StringConstants {
   // Leaderboard
   static const String leaderboardTitle = 'Leaderboard';
   static const String points = 'points';
+  static const String noEntriesYet = 'Not yet available';
 }
